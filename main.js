@@ -10,7 +10,7 @@ const windSpeedLabel = document.getElementById("windspeed-label");
 const errorMsg = document.getElementById("error-message");
 
 const spinner = document.getElementById("loading-spinner");
-const apiKey = "563a3c4a12a15096ba354a730364b632";
+const apiKey = // enter your own api key here. ;
 
 function updateBackgroundColor() {
     const currentHour = new Date().getHours()
