@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#weather-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#weather-card {
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 0%);
+    width: 500px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    opacity: 0.8;
+    font-size: 1.3rem;
+}
+.spinner {
+    display: none;
+    border: 4px solid #f3f3f3; /* Light gray background */
+    border-top: 4px solid #3498db; /* Blue color */
+    border-radius: 50%; /* Circle shape */
+    width: 40px; /* Size of the spinner */
+    height: 40px; /* Size of the spinner */
+    animation: spin 1s linear infinite; /* Rotate animation */
+    margin: 0 auto; /* Center the spinner */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin: 8px 0;
+    height: 1rem; /* keeps space reserved even when empty */
+    text-align: center;
+  }
+
+    #search-box{
+    min-width: 270px;
+    font-size: 1rem;
+    margin-bottom: 13px;
+  }
+
+  #search-btn {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  #search-btn:hover{
+    background-color: hsl(0, 5%, 92%);
+  }
+
+  .search-group {
+    margin-top: 8px;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 20px;
+    padding: 10px 30px;
+  }
+
+
+  #temp-display-section {
+    text-align: center;
+  }
+
+  #temp-emoji {
+    margin: 5px 0 0;
+    font-size: 4rem;
+  }
+
+  #temp-properties-section {
+    text-align: center;
+    display: flex;
+    gap: 40px;
+    margin: 0 0 30px;
+  }
+
+  .label-group {
+    font-size: 1rem;
+  }
+
+  .morning {
+    background: linear-gradient(to top, #FFCC99, #FF9966);  /* Light warm colors */
+  }
+  .afternoon {
+    background: linear-gradient(to top, #FF6600, #FF3300);  /* Vibrant orange/red */
+  }
+  .evening {
+    background: linear-gradient(to top, #333366, #660066);  /* Darker tones for evening */
+  }
+  .night {
+    background: linear-gradient(to top, #000033, #000000);  /* Nighttime dark tones */
+  }

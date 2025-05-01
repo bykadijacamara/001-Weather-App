@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+  <div id="weather-wrapper">
+    <div id="weather-card">
+        <div id="search-section">
+            <label for="search-box" class="visually-hidden">Search city</label>
+            <input id="search-box" class="search-group" type="text" placeholder="search" required/>
+            <button id="search-btn" class="search-group">🔍</button>
+        </div>
+
+        <p id="error-message" class="error"></p>
+
+        <div id="loading-spinner" class="spinner"></div>
+
+        <div id="temp-display-section">
+
+            <p id="temp-emoji">☁️</p>
+            <p id="temp-value">--&deg;F</p>
+            <p id="temp-location">--</p>
+    </div>
+
+    <div id="temp-properties-section">
+
+            <div id="humidity-section">
+                <p id="humidity-value"class="val-label-group">--%</p>
+                <p id="humidity-label" class="label-group">Humidity</p>
+            </div>
+
+            <div id="windspeed-section">
+                <p id="windspeed-value" class="val-label-group">-- km/h</p>
+                <p id="windspeed-label" class="label-group">Wind Speed</p>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
