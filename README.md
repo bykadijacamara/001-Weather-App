@@ -1,4 +1,4 @@
-/* 🌤️ Simple Weather App
+🌤️ Simple Weather App
 
 This is a beginner-friendly weather application that fetches real-time weather data from the OpenWeatherMap API. You can search for any city and get the current temperature, humidity, wind speed, and a weather emoji to match the condition.
 
@@ -23,4 +23,3 @@ git clone https://github.com/your-username/weather-app.git
 	3.	Done!
 
 ⚠️ You’ll need your own free API key from OpenWeatherMap if you try this.
-*/
